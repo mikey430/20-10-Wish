@@ -149,7 +149,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Dancing Script', cursive;
-      font-size: 50px;
+      font-size: clamp(24px, 5vw, 50px);
       color: #ff69b4;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       z-index: 3;
@@ -1375,7 +1375,7 @@
       }
 
       #letterScene .textLetter .contentLetter {
-        font-size: 24px;
+        font-size: 27px;
         max-height: 58vh;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
@@ -1397,6 +1397,11 @@
       #giftOverlay .caption {
         bottom: 16vh;
       }
+
+      .click-text {
+        top: 55%;
+        font-size: clamp(20px, 6vw, 40px);
+    }
     }
   </style>
 </head>
@@ -1548,7 +1553,7 @@
     // --------- Dữ liệu mock thay thế API ---------
     // Biến toàn cục để typing sử dụng dữ liệu mock
     window.textLetterH2 = 'Chúc mừng Ngày Phụ nữ Việt Nam!';
-    window.textLetterP = 'Hôm nay là ngày 20/10, con chúc mẹ luôn xinh đẹp, vui vẻ, hạnh phúc, gặp nhiều may mắn trong cuộc sống và có thật nhiều sức khỏe. Xin gửi tất cả lời chúc tốt đẹp đến với mẹ! 💕';
+    window.textLetterP = 'Hôm nay là ngày 20/10,  úc mẹ luôn xinh đẹp, vui vẻ, hạnh phúc, gặp nhiều may mắn trong cuộc sống và có thật nhiều sức khỏe. Xin gửi tất cả lời chúc tốt đẹp đến với mẹ! 💕';
     window.captionImage = 'Món quà đặc biệt dành tặng những người phụ nữ tuyệt vời nhất! 🌹';
 
     // Dữ liệu mock
